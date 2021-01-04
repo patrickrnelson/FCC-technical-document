@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 280px;
+  height: 100%;
+  width: 300px;
+  border-right: 5px solid #ebebeb;
+  border-radius: 4px;
+
+}
+
+@media (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: fixed;
+    width: 100%;
+    height: 175px;
+    top: 0;
+    background-color: white;
+    border-bottom: 3px solid gray;
+  }
+
+  nav {
+  overflow-y: scroll;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+}
+
+
+#header {
+  font-size: 30px;
+  font-family: 'MedievalSharp', sans-serif;
+  padding-top: 4%;
+  text-align: center;
+}
+
+nav ul {
+  overflow-y: scroll;
+}
+
+nav li {
+  padding-top: 5%;
+  list-style: none;
+}
+
+@media (max-width: 900px) {
+  nav li {
+    padding-top: 1%;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 19px;
+  font-family: domine;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+#main-doc {
+  position: flex;
+  margin-left: 310px;
+  padding-left: 2%;
+  padding-right: 12%;
+}
+
+.main-section {
+  padding-top: 3%;
+}
+
+@media(max-width: 900px) {
+
+  #main-doc {
+  position: flex;
+  width: 100%;
+  margin: 220px 0 0 10px;
+  }
+
+  .main-section {
+    padding-top: 190px;
+    margin-top: -190px;
+}
+  }
+
+#main-headers {
+  font-family: 'MedievalSharp';
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: domine;
+  font-size: 24px;
+}
+
+h3 {
+  font-family: domine;
+  font-size: 22px;;
+}
+
+p {
+  font-family: inconsolata;
+  font-size: 17px;
+}
+
+code {
+  background-color: gray;
+}
